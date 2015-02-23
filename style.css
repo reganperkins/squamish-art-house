@@ -1,0 +1,36 @@
+.header {
+  height: 600px;
+}
+.navbar {
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 5px;
+}
+.btn.btn-default.navbar-btn.button {
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FF5C61;
+  font-size: 1.1em;
+  border: none;
+  color: #fff;
+}
+.snapshot-details {
+  background-color: #F5F5F5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style: none;
+}
+.gallery {
+  height: 600px;
+}
+h1 {
+  text-align: center;
+}
+/*.main-image {
+  background: url("images/living-fireplace.jpg");
+  background-repeat: no-repeat;
+}*/

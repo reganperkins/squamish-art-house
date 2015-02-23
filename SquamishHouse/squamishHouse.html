@@ -1,0 +1,80 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        Squamish Crash Pad
+      </a>
+    </div>
+    <button type="button" class="btn btn-default navbar-btn button pull-right">Request a Booking</button>
+  </div>
+</nav>
+
+<div class="row header" backstretch background-url="images/living-fireplace.jpg">
+  <div class="col-md-12">
+  </div>
+</div>
+
+<div class="row snapshot-details">
+  <div class="col-md-12">
+    <h1>the Squamish Art Pad</h1>
+    <div class="row snapshot-details">
+      <div class="col-md-12">
+        <div class="row snapshot-details">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
+            <span></span>
+            <p>Entire Home</p>
+          </div>
+          <div class="col-md-2">
+            <span></span>
+            <p>5 Guests</p>
+          </div>
+          <div class="col-md-2">
+            <span></span>
+            <p>2 Bedrooms + Den</p>
+          </div>
+          <div class="col-md-2">
+            <span></span>
+            <p>2 Bathrooms</p>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+<div class="row">
+  <div class="col-md-12">
+    <div masonry column-width="200">
+      <div class="masonry-brick" ng-repeat="picture in ctrl.pictures">
+          <img ng-src="{{ picture }}" class="masonry-brick"/>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div ng-controller="GalleryCtrl">
+  <div masonry>
+      <div class="masonry-brick" ng-repeat="brick in bricks">
+          <img ng-src="{{ brick.src }}" alt="A masonry brick">
+      </div>
+  </div>
+</div>
+
+<!-- <div ng-controller="GalleryCtrl">
+  <div masonry column-width="300">
+    <div class="col-md-4 masonry-brick" ng-repeat="picture in pictures">
+        <img ng-src="{{ picture }}">
+    </div>
+  </div>
+</div> -->
+
+
+<div class="row details">
+  <div class="col-md-12">
+    
+  </div>
+</div>

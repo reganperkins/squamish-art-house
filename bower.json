@@ -15,9 +15,7 @@
     "ng-backstretch": "~0.1.2-beta",
     "font-awesome": "~4.3.0"
   },
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "appPath": "app",
   "moduleName": "squawsomeApp"
 }

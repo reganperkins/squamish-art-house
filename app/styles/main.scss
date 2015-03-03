@@ -2,6 +2,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "scss-config.scss";
+@import "nav.scss";
+@import "header.scss";
 // endbower
 
 .browsehappy {
@@ -12,47 +14,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 body {
   padding-top: 50px;
-}
-
-.nav {
-  padding: 10px;
-  background-color: transparent;
-  border-bottom: rgba(0,0,0,0.2) solid 1px;
-  height: 70px;
-}
-.navbar-default .navbar-brand {
-  color: #fff;
-  font-size: $title-text;
-}
-.navbar-btn {
-  background-color: #ff5a5f;
-  border-bottom: #e00007 solid 2px;
-  border-top: none;
-  border-right: none;
-  border-radius: 0;
-  border-left: none;
-  color: #fff;
-  padding: 10px;
-  font-size: $primary-font-size;
-}
-.nav .navbar-btn:hover{
-  color: #fff;
-  background-color: #ff7e82;
-  border-bottom: #ff5a5f solid 2px;
-}
-.header {
-  height: 517px;
-}
-.text-container { 
-  margin: 0 auto;
-  width: 450px;
-  height: 100px; 
-  line-height: 517px;
-}
-
-.text-container h1 {
-  vertical-align: middle;
-  display: inline-block;
 }
 // /* Everything but the jumbotron gets side spacing for mobile first views */
 // .header,

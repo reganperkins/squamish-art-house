@@ -20,7 +20,19 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+
+    <nav class="nav navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" ui-sref="squamish-house">
+            Squamish Crash Pad
+          </a>
+        </div>
+        <button type="button" ui-sref="squamish-house.booking" class="btn btn-default navbar-btn button pull-right">Request a Booking</button>
+      </div>
+    </nav>
+
+    <!-- <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -45,17 +57,17 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="container-fluid">
+      <div ui-view=""></div>
     </div>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
+    <!-- <div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -86,8 +98,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="MainPage/controllers/MainCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

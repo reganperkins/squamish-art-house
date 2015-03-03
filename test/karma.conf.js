@@ -30,6 +30,11 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/filament-fixed/fixedfixed.js',
+      'bower_components/qunit/qunit/qunit.js',
+      'bower_components/filament-sticky/fixedsticky.js',
+      'bower_components/sass-fixed-sticky/dist/sass-fixed-sticky.js',
+      'bower_components/ng-backstretch/dist/ng-backstretch.min.js',
       // endbower
       'app/scripts/**/*.js',
       'test/mock/**/*.js',

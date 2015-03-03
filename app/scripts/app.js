@@ -11,6 +11,7 @@
 angular
   .module('squawsomeApp', [
     'ngAnimate',
+    'ng-backstretch',
     'ui.router',
     'ngCookies',
     'ngResource',

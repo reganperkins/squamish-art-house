@@ -1,4 +1,19 @@
 .center {
-  float: none;
   margin: 0 auto;
+  float: none;
+}
+.details {
+  padding-bottom: 150px;
+  padding-top: 60px;
+}
+.details .center p {
+  font-size: $secondary-font-size;
+  font-weight: 300;
+  color: #999;
+}
+hr.sep {
+  display: block;
+  width: 20%;
+  margin: 1em auto;
+  border: 1px solid #c5a47e;
 }

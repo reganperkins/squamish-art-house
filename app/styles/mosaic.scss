@@ -3,6 +3,25 @@
 }
 .tri-image {
   height:500px;
+  ul {
+    padding-left: 20px;
+  }
+  .content {
+    width: 400px;
+    margin: 0px auto;
+    float: none;
+    padding-top: 170px;
+  }
+  hr.sep {
+    display: block;
+    // width: 40%;
+    margin: 1em auto;
+    border: 1px solid #c5a47e;
+  }
+  li {
+    font-size: $primary-font-size;
+    font-weight: 300;
+  }
 }
 .collection-image {
   // background-size: cover;

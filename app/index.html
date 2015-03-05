@@ -5,6 +5,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Quando' rel='stylesheet' type='text/css'> -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -65,11 +66,17 @@
       <div ui-view=""></div>
     </div>
 
-    <!-- <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+  <div class="container-fluid">
+   <footer class="row">
+      <div class="col-md-12 tx-center" id="contact" >
+        <h2>The Squamish Art House</h2>
+        <address>38057 Guilford Dr / Squamish BC V8B 0C2</address>
+        <p>778 863 5202 / <a herf="mailto:andrew@doodleartworld.com">andrew@doodleartworld.com</a></p>
       </div>
-    </div> -->
+      <div id="map-canvas"></div>
+    </footer>
+  </div>
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -85,6 +92,7 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="scripts/googleMaps.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>

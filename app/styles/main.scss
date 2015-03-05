@@ -3,6 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "scss-config.scss";
 @import "nav.scss";
+@import "parallax.scss";
 @import "header.scss";
 @import "details.scss";
 @import "snapshot.scss";
@@ -27,7 +28,7 @@ body {
   padding-bottom: 0;
   padding-right: 0;
   padding-left: 0;
-  padding-top: 50px;
+  padding-top: 0;
 }
 // /* Everything but the jumbotron gets side spacing for mobile first views */
 // .header,

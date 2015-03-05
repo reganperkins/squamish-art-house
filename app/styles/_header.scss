@@ -1,5 +1,8 @@
 .header {
   height: 567px;
+  position: relative;
+  z-index: 1;
+  // height: 100%;
 }
 .text-container { 
   margin: 0 auto;

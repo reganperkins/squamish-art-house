@@ -2,6 +2,10 @@
   text-align: center;
 }
 .snapshot {
-  height: 250px;
   padding-top: 95px;
+}
+.snapshot-details p {
+  font-size: $secondary-font-size;
+  font-weight: 300;
+  color: #999;
 }

@@ -3,22 +3,24 @@ footer {
   font-weight: 300;
   font-size: $primary-font-size;
   background-color: #353535;
-  height: 300px;
+  // height: 400px;
   a {
     text-decoration: none;
   }
   #contact {
-    // z-index: 100;
-    // position: relative;
-    // background-color: #353535;
-    // opacity: .7;
-    // height: 400px;
+    ///remove below if fotter overlap unwanted
+    z-index: 100;
+    position: relative;
+    background-color: #353535;
+    opacity: .7;
+    height: 400px;
   }
 }
 
   #map-canvas {
     width: 100%;
     height: 400px;
-    // position: absolute;  
-    // z-index: 0;
+    ///remove below if fotter overlap unwanted
+    position: absolute;  
+    z-index: 0;
   }

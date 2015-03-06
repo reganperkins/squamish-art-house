@@ -1,14 +1,17 @@
 .header {
-  height: 567px;
+  height: 100vh;
+  background: url("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+  background-size: cover;
+  // height: 567px;
   position: relative;
-  z-index: 1;
-  // height: 100%;
+  z-index: -1;
 }
 .text-container { 
   margin: 0 auto;
   width: 570px;
   height: 100px; 
-  line-height: 567px;
+  line-height: 700px;
+  // line-height: 567px;
   text-align: center;
 }
 

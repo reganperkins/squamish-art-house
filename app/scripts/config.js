@@ -9,7 +9,7 @@ angular.module('squawsomeApp')
       .state('squamish-house', {
         url: '/squamish-house',
         templateUrl: 'MainPage/squamishHouse.html',
-        controller: 'MainCtrl',
+        controller: 'MainCtrl'
       })
       //each booking will need an id for payment
       .state('squamish-house.booking', {
@@ -23,7 +23,7 @@ angular.module('squawsomeApp')
         url:'/payment/{id}',
         templateUrl: 'Payment/payment.html',
         controller: 'PaymentCtrl'
-      })
+      });
 
       $urlRouterProvider.otherwise('squamish-house');
 

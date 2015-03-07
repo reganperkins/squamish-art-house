@@ -5,12 +5,12 @@
 .details {
   padding-bottom: 150px;
   padding-top: 60px;
-  background-color: #fff;
+  background-color: $primary-font-color;
 }
 .details .center p {
   font-size: $secondary-font-size;
   font-weight: 300;
-  color: #999;
+  color: $secondary-font-color;
 }
 .details hr.sep {
   display: block;

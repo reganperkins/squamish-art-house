@@ -5,7 +5,7 @@
   height: 70px;
 }
 .navbar-default .navbar-brand {
-  color: #fff;
+  color: $primary-font-color;
 }
 .navbar-btn {
   background-color: #ff5a5f;
@@ -14,12 +14,12 @@
   border-right: none;
   border-radius: 0;
   border-left: none;
-  color: #fff;
+  color: $primary-font-color;
   padding: 10px;
   font-size: $primary-font-size;
 }
 .nav .navbar-btn:hover{
-  color: #fff;
+  color: $primary-font-color;
   background-color: #ff7e82;
   border-bottom: #ff5a5f solid 2px;
 }

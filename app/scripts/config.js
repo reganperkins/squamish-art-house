@@ -9,12 +9,12 @@ angular.module('squawsomeApp')
       .state('squamish-house', {
         url: '/squamish-house',
         templateUrl: 'MainPage/squamishHouse.html',
-        controller: 'MainCtrl'
+        controller: 'DetailsCtrl'
       })
       //each booking will need an id for payment
-      .state('squamish-house.booking', {
+      .state('booking', {
         // url:'/booking/{id}',
-        url:'/booking',
+        url:'squamish-house/booking',
         templateUrl: 'Booking/booking.html',
         controller: 'BookingCtrl'
       })

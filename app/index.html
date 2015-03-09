@@ -24,14 +24,14 @@
 
     <!-- Add your site or application content here -->
 
-    <nav class="nav navbar-default navbar-fixed-top">
+    <nav ng-hide="" class="nav navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- <div class="navbar-header">
           <a class="navbar-brand" ui-sref="squamish-house">
             Squamish Crash Pad
           </a>
         </div> -->
-        <button type="button" ui-sref="squamish-house.booking" class="btn btn-default navbar-btn button pull-right">Request a Booking</button>
+        <button type="button" ui-sref="booking" class="btn btn-default navbar-btn button pull-right">Request a Booking</button>
       </div>
     </nav>
 
@@ -83,7 +83,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/config.js"></script>
-        <script src="MainPage/controllers/MainCtrl.js"></script>
+        <script src="MainPage/controllers/DetailsCtrl.js"></script>
+        <script src="Booking/controllers/BookingCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,5 +1,5 @@
 angular.module('squawsomeApp')
-  .controller('MainCtrl', function(){
+  .controller('DetailsCtrl', function(){
     
     angular.element(document).ready(function initialize() {
       var myLatlng = new google.maps.LatLng(49.697344, -123.135071);

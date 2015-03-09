@@ -1,1 +1,21 @@
-<p>HELLOOOO IM BOOKING</p>
+<form controller="BookingCtrl as ctrl" name="bookingForm">
+
+  Check In
+  <input type="text" name="ckin" ng-model="ctrl.booking.checkin">
+  Check Out
+  <input type="text" name="ckout" ng-model="ctrl.booking.checkout">
+  Guests
+  <input type="dropdown" name="guests" ng-model="ctrl.booking.guests">
+
+  {{ctrl.cost}} x {{ctrl.booking.nights}} 
+  {{ctrl.booking.pretotal}}CND
+
+  Tax 
+  {{ctrl.tax}}CND
+
+  Total
+  {{ctrl.booking.total}}
+
+  <input type="submit" value="Submit" ng-disabled="myForm.$invalid">
+  
+</form>

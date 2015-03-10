@@ -1,11 +1,19 @@
-<form controller="BookingCtrl as ctrl" name="bookingForm">
+<form controller="BookingCtrl as ctrl" name="bookingForm" ng-submit="ctrl.submitBooking">
 
   Check In
   <input type="text" name="ckin" ng-model="ctrl.booking.checkin">
   Check Out
   <input type="text" name="ckout" ng-model="ctrl.booking.checkout">
   Guests
-  <input type="dropdown" name="guests" ng-model="ctrl.booking.guests">
+  <div class="select select-block">
+    <select id="number_of_guests" name="number_of_guests"><option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+  <input type="number" name="guests" ng-model="ctrl.booking.guests">
 
   {{ctrl.cost}} x {{ctrl.booking.nights}} 
   {{ctrl.booking.pretotal}}CND
@@ -19,3 +27,63 @@
   <input type="submit" value="Submit" ng-disabled="myForm.$invalid">
   
 </form>
+
+<div class="row">
+  <div class="col-md-4">
+    <div controller="BookingCtrl as ctrl">
+      <form name="bookingForm" ng-submit="ctrl.submitBooking">
+        <div class="form-fields">
+          <div class="row row-condensed row-space-3">
+
+            <div class="col-md-9">
+              <div class="row row-condensed">
+                <div class="col-sm-6 row-space-1-sm">
+                  <label for="checkin">
+                    Check In
+                  </label>
+                  <input class="checkin" name="checkin" placeholder="dd-mm-yyyy" type="datepicker" ng-model="ctrl.booking.checkin">
+                </div>
+                <div class="col-sm-6 row-space-1-sm">
+                  <label for="checkout">
+                    Check Out
+                  </label>
+                  <input class="checkout" name="checkout" placeholder="dd-mm-yyyy" type="datepicker" ng-model="ctrl.booking.checkout">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="input-group">
+                        <!-- http://angular-ui.github.io/bootstrap/#/datepicker -->
+                        <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                        <span class="input-group-btn">
+                          <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="number_of_guests">
+                Guests
+              </label>
+              <div class="select select-block">
+                <select name="guests" ng-model="ctrl.booking.guests">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Submit" ng-disabled="myForm.$invalid">
+      </form>
+    </div>
+  </div>
+</div>
+    
